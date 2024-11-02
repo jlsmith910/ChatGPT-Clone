@@ -1,0 +1,4 @@
+# Please ensure you have the required dependencies for the program
+
+requests
+python-dotenv
