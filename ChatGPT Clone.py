@@ -27,7 +27,6 @@ threads = []
 
 while True:
   user_message = input("You: ")
-  
   if user_message == "exit":
     break
   elif user_message == "new":
