@@ -1,4 +1,4 @@
-# Please ensure you have the required dependencies for the program
+# Please ensure you have the below required dependencies for program execution
 
 requests
 python-dotenv
