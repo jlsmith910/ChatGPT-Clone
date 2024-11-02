@@ -4,13 +4,12 @@ import requests
 from dotenv import load_dotenv
 
 load_dotenv()
-api_key = os.getenv("MIMO_OPENAI_API_KEY")
+# Add OPENAI key to the method below
+api_key = os.getenv()
 
 url = "https://ai.mimo.org/v1/openai/message"
 headers = {"api-key": api_key}
 current_thread_id = None
-
-
 
 def send_message(user_message, current_thread_id):
   body = {"message" : user_message}
@@ -36,7 +35,6 @@ while True:
     print("A new conversation thread is starting.")
     continue
   
-
   response_data = send_message(user_message, current_thread_id)
   latest_message = response_data.get("response")
   current_thread_id = response_data.get("threadId")
