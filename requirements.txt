@@ -1,4 +1,5 @@
 # Please ensure you have the below required dependencies for program execution
 
+os
 requests
 python-dotenv
